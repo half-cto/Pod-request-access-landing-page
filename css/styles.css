@@ -161,5 +161,21 @@ p {
     padding-block: .5625rem;
     border-radius: 28px;
     color: var(--clr-neutral-700);
+    cursor: pointer;
     text-align: center;
+    transition: background-color .3s ease-out;
+}
+
+.button:hover {
+    background-color: #B3FFE2;
+}
+
+.button:active {
+    background-color: #fff;
+}
+
+.error-msg {
+    margin: 0px;
+    color: #FB3E3E;
+    transition: color 0s ease-out;
 }
