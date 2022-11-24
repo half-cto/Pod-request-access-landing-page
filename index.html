@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/css_reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Frontend Mentor | Pod request access landing page</title>
+</head>
+<body>
+  <main>
+    <img class="pod-logo" src="./assets/desktop/logo.svg" alt="Pod logo">
+    <picture class="hero-pic">
+      <img 
+        src="./assets/mobile/image-host.jpg" 
+        alt="Podcas host speaking in studio">
+    </picture>
+    <section class="info-wrap">
+      <h1><span class="green">Publish your podcasts</span> everywhere.</h1>
+      <p>
+        Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+        Apple Podcasts, Google Podcasts, Pocket Casts and more!
+      </p>
+      <div class="media-icon-wrap">
+        <img 
+          class="media-icon" 
+          src="./assets/desktop/spotify.svg" 
+          alt="Spotify icon">
+        <img 
+          class="media-icon" 
+          src="./assets/desktop/apple-podcast.svg" 
+          alt="Apple podcasts icon">
+        <img 
+          class="media-icon" 
+          src="./assets/desktop/google-podcasts.svg" 
+          alt="Google podcasts icon">
+        <img 
+          class="media-icon" 
+          src="./assets/desktop/pocket-casts.svg" 
+          alt="Pocket podcasts icon">
+      </div>
+      <div class="email-input-wrap">
+        <input
+                class="text-field input-text"
+                type="text"
+                id="email-input"
+                name="email-input"
+                required placeholder="Email address">
+        <div class="button input-text">Request access</div>
+        <p class=" error-msg"></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
