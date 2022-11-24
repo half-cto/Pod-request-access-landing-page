@@ -14,8 +14,7 @@ let validateEmail = () => {
     console.log(email.value);
     if (inputEmail === '') {
         errorMsg.innerHTML = 'Oops! Please add your email';
-    }
-    if (!emailRegEx.test(inputEmail)){
+    }else if (!emailRegEx.test(inputEmail)){
         errorMsg.innerHTML = 'Oops! Please check your email';
     } else {
         errorMsg.style.color = '#54E6AF'

@@ -58,6 +58,17 @@ body {
     min-width: 375px;
 }
 
+@media screen and (min-width: 75em) {
+    body {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+}
+
 h1 {
     font-size: var(--fs-700);
     line-height: var(--lh-700);
@@ -93,6 +104,17 @@ main {
     }
 }
 
+@media screen and (min-width: 75em) {
+    main {
+        position: relative;
+        height: 40rem;
+        max-width: 1275px;
+        max-height: 640px;
+        margin-left: auto;
+        margin-block: auto;
+    }
+}
+
 .pod-logo {
     display: block;
     margin-block: 3.875rem 3.5625rem;
@@ -104,6 +126,13 @@ main {
     .pod-logo {
         margin-inline: 0;
         margin-block: 3.125rem 0rem;
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .pod-logo {
+        margin-top: 0;
+        transform: translateY(-50%);
     }
 }
 
@@ -122,12 +151,19 @@ main {
     }
 }
 
+/* * ====================== INFO SECTION ==================== */
+
 @media screen and (min-width: 37.5em) {
     .info-wrap {
         display: flex;
         flex-direction: column;
         background-color: var(--clr-neutral-700);
         width: 86%;
+    }
+}
+@media screen and (min-width: 75em) {
+    .info-wrap {
+        width: 56%;
     }
 }
 
@@ -283,5 +319,11 @@ p {
         display: block;
         position: absolute;
         bottom: -17rem;
+    }
+}
+@media screen and (min-width: 75em) {
+    .dots {
+        bottom: -5rem;
+        right: -62.5rem;
     }
 }
